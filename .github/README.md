@@ -1,635 +1,464 @@
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<!--              ✦  XBITCODE MUSIC BOT  ✦                        -->
-<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,30:302b63,60:7c3aed,85:a855f7,100:ec4899&height=260&section=header&text=🎵%20XBITCODE%20MUSIC&fontSize=62&fontColor=ffffff&animation=twinkling&fontAlignY=45&stroke=ffffff&strokeWidth=1&desc=⚡%20Telegram%20Music%20Bot%20•%20Powered%20by%20XBitcode%20API&descAlignY=68&descSize=16&descColor=e2d9ff" width="100%"/>
-
-</div>
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=20&duration=2500&pause=800&color=A855F7&center=true&vCenter=true&multiline=false&width=700&height=45&lines=🎵+Stream+Audio+%26+Video+in+Telegram+Voice+Chats;🔒+Zero+Cookies+•+Zero+Errors+•+100%25+Uptime;⚡+Lightning-Fast+%7C+Secure+%7C+Developer-Ready;🚀+Powered+by+XBitcode+Music+API" alt="Typing SVG" />
-
-
-</div>
-
-<br/>
-
-<div align="center">
-
-[![License](https://img.shields.io/badge/◈%20License-Commercial-dc2626?style=for-the-badge&logoColor=white)](https://music.xbitcode.com)&nbsp;
-[![Python](https://img.shields.io/badge/◈%20Python-3.10+-2563eb?style=for-the-badge&logo=python&logoColor=white)](https://python.org)&nbsp;
-[![Telegram](https://img.shields.io/badge/◈%20Platform-Telegram-0ea5e9?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/stranger_support)&nbsp;
-[![Status](https://img.shields.io/badge/◈%20Status-LIVE%20%E2%96%B2-16a34a?style=for-the-badge)](https://music.xbitcode.com)
-
-[![Security](https://img.shields.io/badge/◈%20Security-Verified%20%26%20Safe%20🔒-059669?style=for-the-badge)](https://github.com/xbitcode/music)&nbsp;
-[![Updated](https://img.shields.io/badge/◈%20Repo-Fully%20Updated%20✅-7c3aed?style=for-the-badge)](https://github.com/xbitcode/music)&nbsp;
-[![Stars](https://img.shields.io/github/stars/xbitcode/music?style=for-the-badge&color=f59e0b&label=◈%20Stars)](https://github.com/xbitcode/music/stargazers)&nbsp;
-[![Forks](https://img.shields.io/github/forks/xbitcode/music?style=for-the-badge&color=a855f7&label=◈%20Forks)](https://github.com/xbitcode/music/network)
-
-</div>
-
-<br/>
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                     BANNER / THUMBNAIL                     -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,24&height=3&width=100%25"/>
-</picture>
-
-<table>
-<tr>
-<td align="center" width="50%">
-
-```
- ╔══════════════════════════════════╗
- ║   🎵  XBITCODE MUSIC BOT  🎵    ║
- ║──────────────────────────────────║
- ║  🟢  Status      →  Online       ║
- ║  ⚡  Latency     →  < 100ms      ║
- ║  🔒  Cookies     →  Zero         ║
- ║  🛡️  Security    →  Verified     ║
- ║  🔄  Version     →  Latest       ║
- ║  🎧  Streams     →  Audio + Video║
- ╚══════════════════════════════════╝
-```
-
-</td>
-<td align="center" width="50%">
-
-```
- ╔══════════════════════════════════╗
- ║    🚀  XBITCODE  API  🚀         ║
- ║──────────────────────────────────║
- ║  🔑  Auth        →  API Key      ║
- ║  📡  Endpoint    →  xbitcode.com ║
- ║  📦  Format      →  REST         ║
- ║  🌐  SDKs        →  Py/JS/C++    ║
- ║  📊  Plans       →  Free → Ultra ║
- ║  ⚙️  Docs        →  Available    ║
- ╚══════════════════════════════════╝
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                        OVERVIEW                           -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 🌟 Overview 〕
-
-</div>
-
-<br/>
-
-<table>
-<tr>
-<td width="65%" valign="top">
-
-> ### 🎯 What is Xbitcode Music Bot?
->
-> **Xbitcode Music Bot** is a production-grade Telegram bot that streams crystal-clear **audio & video** into Telegram voice chats — built with zero-cookie architecture, smart error handling, and blazing performance at its core.
->
-> Whether you're running a small group or a massive community, this bot scales effortlessly — backed by the **XBitcode Music API** for maximum reliability and uptime.
-
-<br/>
-
-**Built for:**
-- 🧑‍💻 **Developers** building custom Telegram music bots
-- 🎙️ **Bot Owners** needing stable, cookie-free streams
-- 🏢 **Teams** requiring scalable, API-driven music infrastructure
-
-</td>
-<td width="35%" align="center" valign="middle">
-
-<img src="https://media.giphy.com/media/LaVp0AyqR5bGsC5Cbm/giphy.gif" width="220" style="border-radius:16px"/>
-
-<br/><br/>
-
-[![⭐ Star this Repo](https://img.shields.io/badge/⭐%20Star%20this%20Repo-f59e0b?style=for-the-badge)](https://github.com/xbitcode/music)
-
-</td>
-</tr>
-</table>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                        FEATURES                           -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 ✨ Features 〕
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/🎧-Audio%20%26%20Video-A855F7?style=for-the-badge&labelColor=1a1a2e"/>
-
-**High-quality streaming**  
-in Telegram voice chats
-
-</td>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/🚫-Cookie--Free-dc2626?style=for-the-badge&labelColor=1a1a2e"/>
-
-**No cookies needed**  
-Always stable & clean
-
-</td>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/⚡-Error--Free-f59e0b?style=for-the-badge&labelColor=1a1a2e"/>
-
-**Smart fallback handling**  
-Robust & resilient API
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/🔑-API%20Auth-0ea5e9?style=for-the-badge&labelColor=1a1a2e"/>
-
-**Secure per-key access**  
-Full control & isolation
-
-</td>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/📈-Scalable%20Plans-16a34a?style=for-the-badge&labelColor=1a1a2e"/>
-
-**Free to Enterprise tiers**  
-Grow without limits
-
-</td>
-<td align="center" width="33%">
-
-<img src="https://img.shields.io/badge/🌐-Multi--Language-7c3aed?style=for-the-badge&labelColor=1a1a2e"/>
-
-**Python • Node.js • C++**  
-Use your stack of choice
-
-</td>
-</tr>
-<tr>
-<td align="center" colspan="3">
-
-<img src="https://img.shields.io/badge/🔒-Verified%20Safe%20%26%20Fully%20Updated-059669?style=for-the-badge&labelColor=1a1a2e"/>
-
-**Repo is regularly audited, patched, and kept fully up to date — safe to fork and deploy**
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                      MUSIC API CTA                        -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 🛒 XBitcode Music API 〕
-
-</div>
-
-<br/>
-
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║    🚀  The engine powering this bot is available to YOU!         ║
-║                                                                  ║
-║    Buy the XBitcode Music API and supercharge your own           ║
-║    Telegram music bot with cookie-free, high-uptime streams.     ║
-║                                                                  ║
-║    ✦  Free tier available   ✦  Instant API key delivery          ║
-║    ✦  Flexible monthly plans  ✦  Full documentation              ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
-
-<br/>
-
-[![🚀 Get the API](https://img.shields.io/badge/━━━━━━━%20🚀%20GET%20THE%20MUSIC%20API%20━━━━━━━-A855F7?style=for-the-badge&logoColor=white&labelColor=0d0d1a)](https://music.xbitcode.com)
-
-<br/>
-
-[![📖 API Docs](https://img.shields.io/badge/📖%20API%20Documentation-Explore%20Docs-0078D4?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0d0d1a)](https://music.xbitcode.com/dashboard/docs)&nbsp;&nbsp;
-[![💳 Pricing](https://img.shields.io/badge/💳%20Pricing%20Plans-View%20All%20Plans-059669?style=for-the-badge&logo=stripe&logoColor=white&labelColor=0d0d1a)](https://music.xbitcode.com/#pricing)&nbsp;&nbsp;
-[![🔑 Get Key](https://img.shields.io/badge/🔑%20Get%20API%20Key-Sign%20In-f59e0b?style=for-the-badge&logo=key&logoColor=white&labelColor=0d0d1a)](https://music.xbitcode.com/auth/signin)
-
-<br/>
-
-```python
-# ─────────────────────────────────────────
-#   XBitcode Music API — Quick Reference
-# ─────────────────────────────────────────
-
-API_KEY   = "xbit_10000000xx0233"    # Your key from music.xbitcode.com
-BASE_URL  = "https://music.xbitcode.com"
-AUTH      = "Set API_KEY in config.py / .env"
-DOCS      = "music.xbitcode.com/dashboard/docs"
-```
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                   SECURITY SECTION                        -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 🔐 Security & Reliability 〕
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center">
-
-```
-  ┌─────────────────────────────────────────────────────────┐
-  │                                                         │
-  │   ✅  Fully verified — safe to clone, fork & deploy     │
-  │   ✅  No hidden scripts, no malicious code              │
-  │   ✅  Regularly patched and updated to latest           │
-  │   ✅  Open for community review                         │
-  │   ✅  Maintained actively by the XBITCODE team          │
-  │                                                         │
-  └─────────────────────────────────────────────────────────┘
-```
-
-</td>
-</tr>
-</table>
-
-[![🔐 Verified Safe](https://img.shields.io/badge/🔐%20Verified%20Safe-No%20Malicious%20Code-059669?style=for-the-badge)](https://github.com/xbitcode/music)&nbsp;
-[![🔄 Up to Date](https://img.shields.io/badge/🔄%20Always%20Updated-Latest%20Patches-7c3aed?style=for-the-badge)](https://github.com/xbitcode/music)&nbsp;
-[![👁️ Open Review](https://img.shields.io/badge/👁️%20Open%20Review-Transparent%20Code-0ea5e9?style=for-the-badge)](https://github.com/xbitcode/music)
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                     DEPLOY SECTION                        -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 🚀 Deployment 〕
-
-</div>
-
-<br/>
-
-### ☁️ &nbsp; Deploy on Heroku
-
-<div align="center">
-
-<br/>
-
-> **One click. No setup. Bot is live in minutes.**
-
-<br/>
-
-[![Deploy On Heroku](https://img.shields.io/badge/━━━━━━%20🚀%20DEPLOY%20ON%20HEROKU%20━━━━━━-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://dashboard.heroku.com/new?template=https://github.com/xbitcode/music)
-
-<br/>
+<h1>🎵 TgMusicBot</h1>
+
+<p>
+  <b>A high-performance, low-latency Telegram audio and video streaming bot written in Go.</b>
+</p>
+
+<p>
+  <a href="https://golang.org/">
+    <img src="https://img.shields.io/badge/Written%20in-Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Language">
+  </a>
+  <a href="https://www.docker.com/">
+    <img src="https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  </a>
+  <a href="https://github.com/AshokShau/TgMusicBot/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-GPL%20v3-4bc51d?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://github.com/AshokShau/TgMusicBot/stargazers">
+    <img src="https://img.shields.io/github/stars/AshokShau/TgMusicBot?style=for-the-badge&color=ffd700&logo=github" alt="Stars">
+  </a>
+  <a href="https://github.com/AshokShau/TgMusicBot/network/members">
+    <img src="https://img.shields.io/github/forks/AshokShau/TgMusicBot?style=for-the-badge&color=blue&logo=github" alt="Forks">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  TgMusicBot streams high-quality audio and up to 1080p video directly into Telegram group video chats.<br>
+  Engineered with <b>Go</b>, <code>gotdbot</code> (TDLib), <code>gogram</code>, and <code>ntgcalls</code> C bindings for efficient resource usage and minimal latency.
+</p>
 
 </div>
 
 ---
 
-### 🖥️ &nbsp; Local / VPS Deployment
+## 🔥 Key Features
 
-<div align="center">
+- **High-Performance Audio & Video**: Native Go core utilizing CGO bindings for efficient multi-track audio and video streaming in Telegram voice chats.
+- **Multiple Media Sources**: Search and play directly from YouTube, Spotify, SoundCloud, Apple Music, direct HTTP/HTTPS media streams, and Telegram audio/video files.
+- **Multi-Assistant Support**: Scale across up to 10 assistant userbot accounts (`STRING1` to `STRING10`) to serve multiple concurrent active voice chats.
+- **Queue & Custom Playlists**: Complete queue management with track ordering, skipping, seeking, looping, and personal user playlist support.
+- **Autoplay Recommendations**: Continuous music playback by automatically queuing recommended tracks when the current queue finishes.
+- **Chat Admin Controls**: Per-chat authorization list, admin-only playback permissions, customizable command deletion, and settings menu.
+- **Containerized Deployment**: Ready-to-use `Dockerfile` and `docker-compose.yml` preconfigured for single-command production deployment.
 
-[![📋 sample.env](https://img.shields.io/badge/📋%20Required%20Variables-sample.env-0ea5e9?style=for-the-badge)](https://github.com/xbitcode/music/blob/main/sample.env)&nbsp;
-[![📚 Full Docs](https://img.shields.io/badge/📚%20Full%20VPS%20Guide-Read%20Docs-7c3aed?style=for-the-badge)](https://stranger-organization.gitbook.io/stranger-music-docs/local-vps-deploy)
+---
 
-</div>
+## 📋 Requirements
 
-<br/>
+Before deploying, ensure you have:
 
-**Step 1 — Clone & Prepare System**
+1. **Linux Server** (Ubuntu 22.04 LTS or Debian 12 recommended) or a **Docker environment**.
+2. **Go 1.26 or higher** (if installing manually without Docker).
+3. **MongoDB Database**: Free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) or a self-hosted instance.
+4. **Telegram API Credentials**: `API_ID` and `API_HASH` from [my.telegram.org](https://my.telegram.org).
+5. **Telegram Bot Token**: HTTP API token generated via [@BotFather](https://t.me/BotFather).
+6. **Assistant Session String**: Pyrogram or Telethon userbot session string for joining group voice chats.
 
-```bash
-# 📥 Clone the repository
-git clone https://github.com/xbitcode/music && cd music
+---
 
-# 🔄 Update system packages
-sudo apt-get update && sudo apt-get upgrade -y
+## ⚙️ Environment Configuration
 
-# 🎬 Install ffmpeg
-sudo apt-get install ffmpeg -y
-```
+<details>
+<summary><b>Click to view Environment Variables & Credentials Setup</b></summary>
 
-**Step 2 — Install Dependencies**
+<br>
 
-```bash
-# ⚡ Install uv (Python package manager)
-curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.local/bin/env
-
-# 📦 Create virtual environment and install dependencies
-uv venv && uv sync
-```
-
-**Step 3 — Configure Environment**
+Copy `sample.env` to create your configuration file:
 
 ```bash
-# ⚙️ Set up your environment variables
 cp sample.env .env
-vi .env
 ```
 
-> 💡 Press `I` to enter insert mode → fill in your variables → press `Esc` → type `:wq` to save & exit.
+### Where to get credentials
 
-**Step 4 — Launch the Bot**
+- **`API_ID` & `API_HASH`**: Log in to [my.telegram.org](https://my.telegram.org) with your Telegram phone number, select **API development tools**, and create an application.
+- **`TOKEN`**: Message [@BotFather](https://t.me/BotFather) on Telegram, send `/newbot`, follow the instructions, and copy the bot token provided.
+- **`STRING1` (or `STRING`)**: Generate a Pyrogram string session for your assistant account using a session generator bot or local script.
+- **`MONGO_URI`**: Register at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), create a database cluster, go to **Database Access / Network Access** to permit connections, and copy the connection string (`mongodb+srv://...`).
+- **`OWNER_ID`**: Send `/id` to [@userinfobot](https://t.me/userinfobot) on Telegram to get your numeric user ID.
+
+### Environment Variables Reference
+
+| Variable              | Required | Default                       | Description                                                            |
+|-----------------------|:--------:|-------------------------------|------------------------------------------------------------------------|
+| `API_ID`              | **Yes**  | -                             | Telegram API ID from my.telegram.org.                                  |
+| `API_HASH`            | **Yes**  | -                             | Telegram API Hash from my.telegram.org.                                |
+| `TOKEN`               | **Yes**  | -                             | Telegram Bot Token from @BotFather.                                    |
+| `OWNER_ID`            | **Yes**  | -                             | Telegram User ID of the bot owner.                                     |
+| `MONGO_URI`           | **Yes**  | -                             | MongoDB connection URI string.                                         |
+| `STRING1`             | **Yes**  | -                             | Assistant session string (`STRING1` to `STRING10` or `STRING`).        |
+| `SESSION_TYPE`        |    No    | `pyrogram`                    | Session string format (`pyrogram` or `telethon`).                      |
+| `DB_NAME`             |    No    | `Anon`                        | Database name inside MongoDB.                                          |
+| `LOGGER_ID`           |    No    | `0`                           | Telegram chat/channel ID where bot startup logs and errors are sent.   |
+| `DEFAULT_SERVICE`     |    No    | `youtube`                     | Default search engine for track queries (`youtube` or `spotify`).      |
+| `SONG_DURATION_LIMIT` |    No    | `3600`                        | Maximum track duration allowed in seconds (default: 1 hour).           |
+| `MAX_FILE_SIZE`       |    No    | `524288000`                   | Maximum file download size limit in bytes (default: 500 MB).           |
+| `ENABLE_VPLAY`        |    No    | `true`                        | Enable or disable video streaming commands (`true` or `false`).        |
+| `AUTO_LEAVE`          |    No    | `false`                       | Automatically leave voice chat when idle or no members remain.         |
+| `COOKIES_URL`         |    No    | -                             | Comma-separated HTTP URLs pointing to raw YouTube `cookies.txt` files. |
+| `SUPPORT_GROUP`       |    No    | `https://t.me/FallenSupport`  | Support group URL shown in help menus.                                 |
+| `SUPPORT_CHANNEL`     |    No    | `https://t.me/FallenProjects` | Updates channel URL shown in help menus.                               |
+| `START_IMG`           |    No    | (default URL)                 | Direct image URL displayed in `/start` command response.               |
+| `DEVS`                |    No    | -                             | Space or comma separated list of additional developer user IDs.        |
+
+</details>
+
+---
+
+## 🚀 Deployment
+
+<details>
+<summary><b>Docker Deployment (Recommended)</b></summary>
+
+<br>
+
+Docker isolates all dependencies (Go 1.26, FFmpeg, yt-dlp, Deno, dynamic libraries) inside a container.
+
+#### 1. Install Docker & Docker Compose
+On Ubuntu / Debian:
 
 ```bash
-# 🖥️ Install tmux (keeps bot alive after terminal closes)
-sudo apt install tmux && tmux
-
-# ▶️ Start the bot
-bash start
+sudo apt update
+sudo apt install -y docker.io docker-compose-v2
+sudo systemctl enable --now docker
 ```
 
-> 💡 Detach from tmux without killing it: Press `Ctrl+b` then `d`
+#### 2. Clone Repository & Configure Environment
 
-<br/>
-
-<div align="center">
-
-```
-╔═══════════════════════════════════════╗
-║   ✅  Bot is now running!             ║
-║   📌  tmux keeps it alive 24/7        ║
-║   🔑  Set your API key in .env        ║
-╚═══════════════════════════════════════╝
+```bash
+git clone https://github.com/AshokShau/TgMusicBot.git
+cd TgMusicBot
+cp sample.env .env
+nano .env
 ```
 
-</div>
+Fill in all required variables inside `.env` (`API_ID`, `API_HASH`, `TOKEN`, `OWNER_ID`, `MONGO_URI`, `STRING1`), then save and exit (`Ctrl + O`, `Enter`, `Ctrl + X`).
 
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
+#### 3. Build & Run Container
 
-<!--------------------------------------------------------------->
-<!--                      SUPPORT                              -->
-<!--------------------------------------------------------------->
+Using Docker Compose:
 
-<div align="center">
-
-## 〔 📡 Support & Community 〕
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<table>
-<tr>
-
-<td align="center" width="33%">
-
-[![💬 Support Group](https://img.shields.io/badge/━━━━━━━━━━━━━━━━━━━━━━━━━━━%0A💬%20Support%20Group%0A━━━━━━━━━━━━━━━━━━━━━━━━━━━-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0a0a1a)](https://t.me/+rr57vjMAQP02NDll)
-
-**Get help from the community**  
-Report bugs & ask questions
-
-</td>
-
-<td align="center" width="33%">
-
-[![📢 Updates Channel](https://img.shields.io/badge/━━━━━━━━━━━━━━━━━━━━━━━━━━━%0A📢%20Updates%20Channel%0A━━━━━━━━━━━━━━━━━━━━━━━━━━━-0ea5e9?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0a0a1a)](https://telegram.me/Ace_networkop)
-
-**Stay in the loop**  
-New features & announcements
-
-</td>
-
-<td align="center" width="33%">
-
-[![🔑 Promo](https://img.shields.io/badge/━━━━━━━━━━━━━━━━━━━━━━━━━━━%0A🔑%20API%20%26%20Promo%0A━━━━━━━━━━━━━━━━━━━━━━━━━━━-A855F7?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0a0a1a)](https://t.me/MR_CUTE_X)
-
-**Buy the API & promotions**  
-Direct contact with team
-
-</td>
-
-</tr>
-</table>
-
-<br/>
-
-| 🔗 Platform | 📌 Link |
-|:---:|:---|
-| 🌐 **Website** | [music.xbitcode.com](https://music.xbitcode.com) |
-| 💬 **Support Group** | [t.me/stranger_support](https://t.me/+rr57vjMAQP02NDll) |
-| 📢 **Updates Channel** | [t.me/Ace_networkop](https://telegram.me/Ace_networkop) |
-| 🔑 **Promotions** | [t.me/Api_and_promotion](https://t.me/MR_CUTE_X) |
-| 🏢 **Company** | [xbitcode.com](https://xbitcode.com/) |
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                       CREDITS                             -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 🏆 Credits & Special Thanks 〕
-
-</div>
-
-<br/>
-
-<div align="center">
-
-```
-  ┌───────────────────────────────────────────────────────────┐
-  │   This project stands on the shoulders of giants. 💜      │
-  │   Massive respect to everyone who contributed below.      │
-  └───────────────────────────────────────────────────────────┘
+```bash
+docker compose up -d --build
 ```
 
-</div>
+Or using standard Docker CLI:
 
-<br/>
-
-<div align="center">
-
-<table>
-<tr>
-<th>🧑‍💻 Contributor</th>
-<th>🔗 GitHub</th>
-<th>🎯 Role</th>
-<th>🏅 Badge</th>
-</tr>
-<tr>
-<td align="center"><b>Sparrow</b></td>
-<td align="center"><a href="https://github.com/sparrow9616">@sparrow9616</a></td>
-<td>Core Development</td>
-<td align="center"><img src="https://img.shields.io/badge/⭐-Core%20Dev-A855F7?style=flat-square"/></td>
-</tr>
-<tr>
-<td align="center"><b>Rehanna</b></td>
-<td align="center"><a href="https://github.com/gr8rehanna">@gr8rehanna</a></td>
-<td>YouTube Proxy</td>
-<td align="center"><img src="https://img.shields.io/badge/⭐-YouTube%20Proxy-dc2626?style=flat-square"/></td>
-</tr>
-<tr>
-<td align="center"><b>Ami</b></td>
-<td align="center"><a href="https://github.com/amjiddader">@amjiddader</a></td>
-<td>Maintainer</td>
-<td align="center"><img src="https://img.shields.io/badge/🔧-Maintainer-0ea5e9?style=flat-square"/></td>
-</tr>
-<tr>
-<td align="center"><b>Team Yukki</b></td>
-<td align="center">—</td>
-<td>Base Repository</td>
-<td align="center"><img src="https://img.shields.io/badge/💜-Base%20Repo-7c3aed?style=flat-square"/></td>
-</tr>
-<tr>
-<td align="center"><b>Anon</b></td>
-<td align="center">—</td>
-<td>Base Repository</td>
-<td align="center"><img src="https://img.shields.io/badge/💜-Base%20Repo-7c3aed?style=flat-square"/></td>
-</tr>
-<tr>
-<td align="center"><b>XBITCODE</b></td>
-<td align="center"><a href="https://xbitcode.com">xbitcode.com</a></td>
-<td>Project Owner</td>
-<td align="center"><img src="https://img.shields.io/badge/🏢-Owner-f59e0b?style=flat-square"/></td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
-</div>
-<br/>
-
-<!--------------------------------------------------------------->
-<!--                      DISCLAIMER                           -->
-<!--------------------------------------------------------------->
-
-<div align="center">
-
-## 〔 ⚠️ Disclaimer 〕
-
-</div>
-
-<div align="center">
-
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                                                                  │
-│  ⚠️  This software is intended for personal and educational use  │
-│  📜  Users must comply with YouTube's Terms of Service.          │
-│  🤖  Users must comply with Telegram's Bot Policy.               │
-│  🚫  Developers are not liable for any misuse of this software.  │
-│                                                                  │
-└──────────────────────────────────────────────────────────────────┘
+```bash
+docker build -t tgmusic .
+docker run -d --name tgmusic --env-file .env --restart unless-stopped tgmusic
 ```
 
-</div>
+#### 4. Container Management
 
-<br/>
+- **View Logs**:
+  ```bash
+  docker compose logs -f
+  ```
+- **Stop Bot**:
+  ```bash
+  docker compose down
+  ```
+- **Restart Bot**:
+  ```bash
+  docker compose restart
+  ```
 
-<!--------------------------------------------------------------->
-<!--                        FOOTER                             -->
-<!--------------------------------------------------------------->
+</details>
 
-<div align="center">
+<details>
+<summary><b>Linux Setup (Ubuntu / Debian)</b></summary>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=140&section=footer&animation=fadeIn&fontColor=ffffff&text=Made%20with%20%E2%9D%A4%EF%B8%8F%20by%20XBITCODE&fontSize=22&fontAlignY=65" width="100%"/>
+<br>
 
-<br/>
+#### 1. Install System Dependencies
 
-[![🌐 xbitcode.com](https://img.shields.io/badge/━━━━━━━━━━%20🌐%20XBITCODE.COM%20━━━━━━━━━━-A855F7?style=for-the-badge)](https://xbitcode.com)
+```bash
+sudo apt update
+sudo apt install -y build-essential ffmpeg curl wget unzip git
+```
 
-<br/>
+Install **yt-dlp**:
 
-<img src="https://komarev.com/ghpvc/?username=xbitcode-music&label=Profile+Views&color=A855F7&style=for-the-badge" alt="Views"/>
+```bash
+sudo wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -O /usr/local/bin/yt-dlp
+sudo chmod a+rx /usr/local/bin/yt-dlp
+```
 
-<br/><br/>
+Install **Deno** (required for YouTube download challenges):
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%"/>
+```bash
+curl -fsSL https://deno.land/install.sh | sh
+echo 'export DENO_INSTALL="$HOME/.deno"' >> ~/.bashrc
+echo 'export PATH="$DENO_INSTALL/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
 
-</div>
+Install **Go** (1.26 or higher required):
+
+```bash
+wget https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.26.0.linux-amd64.tar.gz
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+source ~/.bashrc
+```
+
+#### 2. Clone Repository & Prepare Configuration
+
+```bash
+git clone https://github.com/AshokShau/TgMusicBot.git
+cd TgMusicBot
+cp sample.env .env
+nano .env
+```
+
+Fill in your configuration settings in `.env`.
+
+#### 3. Fetch Required Dynamic Libraries & Build
+
+The bot uses precompiled C libraries for TDLib (`libtdjson`) and `ntgcalls`. Run the setup scripts before compiling:
+
+```bash
+# Download TDLib dynamic library
+go run github.com/AshokShau/gotdbot/scripts/tools
+
+# Download ntgcalls C libraries and headers
+go run setup_ntgcalls.go
+
+# Compile binary with CGO enabled
+CGO_ENABLED=1 go build -o tgmusic main.go
+```
+
+#### 4. Run the Bot
+
+Test run directly in terminal:
+
+```bash
+./tgmusic
+```
+
+#### 5. Background Execution
+
+To keep the bot running after disconnecting from SSH, use `tmux` or `screen`.
+
+##### Option A: Using `tmux`
+
+```bash
+# Start new session
+tmux new -s tgmusic
+
+# Run bot
+./tgmusic
+```
+Detach with `Ctrl + B`, then press `D`.  
+Reattach later: `tmux attach -t tgmusic`
+
+##### Option B: Using `screen`
+
+```bash
+# Start new screen session
+screen -S tgmusic
+
+# Run bot
+./tgmusic
+```
+Detach with `Ctrl + A`, then press `D`.  
+Reattach later: `screen -r tgmusic`
+
+</details>
+
+---
+
+## 🛠️ Bot Commands
+
+<details>
+<summary><b>Click to view Playback Commands</b></summary>
+
+<br>
+
+| Command               | Aliases | Access   | Description                                                                  |
+|-----------------------|---------|----------|------------------------------------------------------------------------------|
+| `/play <query/URL>`   | `/p`    | Everyone | Play audio from YouTube, Spotify, SoundCloud, direct link, or Telegram file. |
+| `/mix <query/URL>`    | -       | Everyone | Create a mix of related YouTube tracks based on query or currently playing song. |
+| `/vplay <query/URL>`  | `/v`    | Everyone | Stream video in group video chat.                                            |
+| `/fplay <query/URL>`  | `/fp`   | Everyone | Force play audio immediately, interrupting current playback.                 |
+| `/fvplay <query/URL>` | `/fvp`  | Everyone | Force play video immediately.                                                |
+| `/pause`              | -       | Admin    | Pause current playback.                                                      |
+| `/resume`             | -       | Admin    | Resume paused playback.                                                      |
+| `/skip`               | -       | Admin    | Skip current track and play next in queue.                                   |
+| `/stop`               | `/end`  | Admin    | Stop playback and clear queue.                                               |
+| `/seek <seconds>`     | -       | Admin    | Jump to a timestamp in seconds.                                              |
+| `/loop <0-10>`        | -       | Admin    | Repeat the current track specified number of times.                          |
+| `/mute`               | -       | Admin    | Mute assistant in voice chat.                                                |
+| `/unmute`             | -       | Admin    | Unmute assistant in voice chat.                                              |
+
+</details>
+
+<details>
+<summary><b>Click to view Queue & Playlist Commands</b></summary>
+
+<br>
+
+| Command                  | Aliases           | Access   | Description                                   |
+|--------------------------|-------------------|----------|-----------------------------------------------|
+| `/queue`                 | -                 | Everyone | View current playback queue.                  |
+| `/remove <index>`        | -                 | Admin    | Remove specific track from queue by position. |
+| `/cplist <name>`         | `/createplaylist` | Everyone | Create a custom personal playlist.            |
+| `/deleteplaylist <name>` | -                 | Everyone | Delete a personal playlist.                   |
+| `/addtoplaylist`         | `/addtoplist`     | Everyone | Add track/reply message to personal playlist. |
+| `/removefromplaylist`    | `/rmplist`        | Everyone | Remove track from personal playlist.          |
+| `/playlistinfo <name>`   | `/plistinfo`      | Everyone | View tracks in a playlist.                    |
+| `/myplaylists`           | `/myplist`        | Everyone | List all your custom playlists.               |
+
+</details>
+
+<details>
+<summary><b>Click to view Admin & Group Setup Commands</b></summary>
+
+<br>
+
+| Command              | Aliases    | Access   | Description                                          |
+|----------------------|------------|----------|------------------------------------------------------|
+| `/join`              | `/link`    | Admin    | Invite assistant userbot to the group voice chat.    |
+| `/auth <user>`       | `/addAuth` | Admin    | Grant bot admin rights in chat to a user.            |
+| `/removeAuth <user>` | `/rmAuth`  | Admin    | Revoke bot admin rights from a user.                 |
+| `/authList`          | `/auths`   | Everyone | List authorized users in current chat.               |
+| `/settings`          | -          | Owner    | Open interactive settings menu for chat preferences. |
+| `/autoplay`          | -          | Admin    | Toggle autoplay for track recommendations.           |
+| `/reload`            | -          | Admin    | Refresh chat admin cache and invite links.           |
+
+</details>
+
+<details>
+<summary><b>Click to view Owner & Developer Commands</b></summary>
+
+<br>
+
+| Command            | Aliases            | Access   | Description                                       |
+|--------------------|--------------------|----------|---------------------------------------------------|
+| `/stats`           | -                  | Devs     | Display system resource usage and bot statistics. |
+| `/active_vc`       | `/av`              | Devs     | List all active voice chats across groups.        |
+| `/broadcast <msg>` | `/gCast`           | Owner    | Broadcast message to served chats.                |
+| `/stop_broadcast`  | `/stop_gcast`      | Owner    | Cancel active broadcast execution.                |
+| `/clearass`        | `/clearAssistants` | Devs     | Reset assistant assignments.                      |
+| `/leaveAll`        | -                  | Devs     | Make assistants leave all chats.                  |
+| `/logger`          | -                  | Devs     | View logging channel status.                      |
+| `/ping`            | -                  | Everyone | Check bot latency and uptime status.              |
+
+</details>
+
+---
+
+## 🔄 Updating the Bot
+
+When new updates are released, update your deployment using the steps below:
+
+### Docker Deployment Update
+
+```bash
+cd TgMusicBot
+git pull origin master
+docker compose down
+docker compose up -d --build
+```
+
+### Linux Deployment Update
+
+```bash
+cd TgMusicBot
+# Stop running instance (e.g. exit tmux/screen session)
+
+# Pull latest commits
+git pull origin master
+
+# Update Go dependencies and dynamic libraries
+go mod download
+go run github.com/AshokShau/gotdbot/scripts/tools
+go run setup_ntgcalls.go
+
+# Recompile binary
+CGO_ENABLED=1 go build -o tgmusic main.go
+
+# Restart process inside tmux or screen
+```
+
+---
+
+## ❓ Troubleshooting
+
+<details>
+<summary><b>Assistant account fails to join voice chat</b></summary>
+
+<br>
+
+- Ensure the assistant account is not banned or restricted in the group.
+- Start the Voice Chat in the Telegram group **before** running `/join` or `/play`.
+- Verify that your userbot session string (`STRING1`) is active and generated from the same `API_ID` / `API_HASH`.
+</details>
+
+<details>
+<summary><b>YouTube playback fails with 403 Forbidden or Sign-in errors</b></summary>
+
+<br>
+
+- YouTube frequently updates bot detection mechanisms.
+- Export raw cookies from your browser (using extensions like *Get cookies.txt LOCALLY*).
+- Upload the `cookies.txt` file to a URL or GitHub Gist (raw link) and set `COOKIES_URL` in your `.env`.
+</details>
+
+<details>
+<summary><b>Build error: missing C dependencies or CGO disabled</b></summary>
+
+<br>
+
+- Ensure `build-essential` and `gcc` are installed on your Linux host.
+- Always include `CGO_ENABLED=1` when running `go build`.
+- Make sure you executed `go run github.com/AshokShau/gotdbot/scripts/tools` and `go run setup_ntgcalls.go` prior to building.
+</details>
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature suggestions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature/amazing-feature`.
+3. Commit your changes: `git commit -m 'Add amazing feature'`.
+4. Push to the branch: `git push origin feature/amazing-feature`.
+5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **GNU General Public License v3.0**. See the [LICENSE](../LICENSE) file for full details.
+
+---
+
+## 💬 Support & Updates
+
+- **Support Group**: [Telegram Support](https://t.me/FallenSupport)
+- **Updates Channel**: [Telegram Channel](https://t.me/FallenProjects)
+
+---
+
+## ❤️ Donate
+
+If you find this project useful, consider supporting its development with a donation:
+
+- **GRAM (TON) / USDT-GRAM:** `UQD8rsWDh3VD9pXVNuEbM_rIAKzV07xDhx-gzdDe0tTWGXan`
+- **USDT (TRC20):** `TJWZqPK5haSE8ZdSQeWBPR5uxPSUnS8Hcq`
+- **Telegram Wallet:** [@Ashokshau](https://t.me/Ashokshau)
+
+Thank you for supporting the project!
+
+---
+
+<p align="center">
+  Made with 🖤 by <a href="https://github.com/ashokshau">Ashok Shau</a>
+</p>
