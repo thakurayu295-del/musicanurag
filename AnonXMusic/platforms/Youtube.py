@@ -344,7 +344,9 @@ class YouTubeAPI:
             return session
 
         async def download_with_requests(url, filepath, headers=None):
+            session = None
             try:
+                os.makedirs(os.path.dirname(filepath) or ".", exist_ok=True)
                 session = create_session()
                 
                 # Use headers for authentication (including x-api-key)
@@ -376,207 +378,110 @@ class YouTubeAPI:
                     os.remove(filepath)
                 return None
             finally:
-                session.close()
+                if session is not None:
+                    session.close()
+
+        async def get_onegrab_track(track_url, want_video=False):
+            """Resolve a YouTube URL through OneGrab and return its CDN URL."""
+            if not YT_API_KEY:
+                logger.error("OneGrab API key is missing. Set YT_API_KEY in config.")
+                return None
+            if not YTPROXY:
+                logger.error("OneGrab API base URL is missing. Set YTPROXY_URL in config.")
+                return None
+
+            headers = {
+                "X-API-Key": YT_API_KEY,
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+            }
+            params = {"url": track_url, "video": str(want_video).lower()}
+            session = None
+            try:
+                session = create_session()
+                response = session.get(
+                    f"{YTPROXY.rstrip('/')}/api/track",
+                    headers=headers,
+                    params=params,
+                    timeout=60,
+                )
+                response.raise_for_status()
+                data = response.json()
+                cdn_url = data.get("cdnurl")
+                if not cdn_url:
+                    logger.error("OneGrab response did not include cdnurl: %s", data)
+                    return None
+                return cdn_url
+            except requests.exceptions.RequestException as e:
+                logger.error("OneGrab request failed: %s", e)
+            except (ValueError, json.JSONDecodeError) as e:
+                logger.error("OneGrab returned invalid JSON: %s", e)
+            except Exception as e:
+                logger.error("Unexpected OneGrab error: %s", e)
+            finally:
+                if session is not None:
+                    session.close()
+            return None
 
         async def audio_dl(vid_id):
             try:
-                if not YT_API_KEY:
-                    logger.error("API KEY not set in config, Set API Key you got from @tgmusic_apibot")
-                    return None
-                if not YTPROXY:
-                    logger.error("API Endpoint not set in config\nPlease set a valid endpoint for YTPROXY_URL in config.")
-                    return None
-                
-                headers = {
-                    "x-api-key": f"{YT_API_KEY}",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                }
-                
                 filepath = os.path.join("downloads", f"{vid_id}.mp3")
-                
-                if os.path.exists(filepath):
+                os.makedirs(os.path.dirname(filepath), exist_ok=True)
+                if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
                     return filepath
-                
-                session = create_session()
-                getAudio = session.get(f"{YTPROXY}/info/{vid_id}", headers=headers, timeout=60)
-                
-                try:
-                    songData = getAudio.json()
-                except Exception as e:
-                    logger.error(f"Invalid response from API: {str(e)}")
+
+                audio_url = await get_onegrab_track(self.base + vid_id, want_video=False)
+                if not audio_url:
                     return None
-                finally:
-                    session.close()
-                
-                status = songData.get('status')
-                if status == 'success':
-                    audio_url = songData['audio_url']                    
-                    result = await download_with_requests(audio_url, filepath, headers)
-                    if result:
-                        return result
-                    
-                    return None
-                    
-                elif status == 'error':
-                    logger.error(f"API Error: {songData.get('message', 'Unknown error from API.')}")
-                    return None
-                else:
-                    logger.error("Could not fetch Backend \nPlease contact API provider.")
-                    return None
-                    
-            except requests.exceptions.RequestException as e:
-                logger.error(f"Network error while fetching audio info: {str(e)}")
-            except json.JSONDecodeError as e:
-                logger.error(f"Invalid response from proxy: {str(e)}")
+                return await download_with_requests(audio_url, filepath)
             except Exception as e:
-                logger.error(f"Error in audio download: {str(e)}")
-            
-            return None
-        
-        
+                logger.error("Error in audio download: %s", e)
+                return None
+
         async def video_dl(vid_id):
             try:
-                if not YT_API_KEY:
-                    logger.error("API KEY not set in config, Set API Key you got from @tgmusic_apibot")
-                    return None
-                if not YTPROXY:
-                    logger.error("API Endpoint not set in config\nPlease set a valid endpoint for YTPROXY_URL in config.")
-                    return None
-                
-                headers = {
-                    "x-api-key": f"{YT_API_KEY}",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                }
-                
                 filepath = os.path.join("downloads", f"{vid_id}.mp4")
-                
-                if os.path.exists(filepath):
+                os.makedirs(os.path.dirname(filepath), exist_ok=True)
+                if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
                     return filepath
-                
-                session = create_session()
-                getVideo = session.get(f"{YTPROXY}/info/{vid_id}", headers=headers, timeout=60)
-                
-                try:
-                    videoData = getVideo.json()
-                except Exception as e:
-                    logger.error(f"Invalid response from API: {str(e)}")
+
+                video_url = await get_onegrab_track(self.base + vid_id, want_video=True)
+                if not video_url:
                     return None
-                finally:
-                    session.close()
-                
-                status = videoData.get('status')
-                if status == 'success':
-                    video_url = videoData['video_url']
-                    #video_url = base64.b64decode(videolink).decode() removed in 3.5.0
-                    
-                    result = await download_with_requests(video_url, filepath, headers)
-                    if result:
-                        return result
-                    
-                    return None
-                    
-                elif status == 'error':
-                    logger.error(f"API Error: {videoData.get('message', 'Unknown error from API.')}")
-                    return None
-                else:
-                    logger.error("Could not fetch Backend \nPlease contact API provider.")
-                    return None
-                    
-            except requests.exceptions.RequestException as e:
-                logger.error(f"Network error while fetching video info: {str(e)}")
-            except json.JSONDecodeError as e:
-                logger.error(f"Invalid response from proxy: {str(e)}")
+                return await download_with_requests(video_url, filepath)
             except Exception as e:
-                logger.error(f"Error in video download: {str(e)}")
-            
-            return None
-        
+                logger.error("Error in video download: %s", e)
+                return None
+
         async def song_video_dl():
             try:
-                if not YT_API_KEY:
-                    logger.error("API KEY not set in config")
-                    return None
-                if not YTPROXY:
-                    logger.error("API Endpoint not set in config")
-                    return None
-                
-                headers = {
-                    "x-api-key": f"{YT_API_KEY}",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                }
-                
-                filepath = f"downloads/{title}.mp4"
-                
-                if os.path.exists(filepath):
+                safe_title = re.sub(r'[\\/:*?"<>|]+', "_", str(title or vid_id))[:180]
+                filepath = os.path.join("downloads", f"{safe_title}.mp4")
+                os.makedirs(os.path.dirname(filepath), exist_ok=True)
+                if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
                     return filepath
-                
-                session = create_session()
-                getVideo = session.get(f"{YTPROXY}/info/{vid_id}", headers=headers, timeout=60)
-                
-                try:
-                    videoData = getVideo.json()
-                except Exception as e:
-                    logger.error(f"Invalid response from API: {str(e)}")
+
+                video_url = await get_onegrab_track(self.base + vid_id, want_video=True)
+                if not video_url:
                     return None
-                finally:
-                    session.close()
-                
-                status = videoData.get('status')
-                if status == 'success':
-                    video_url = videoData['video_url']
-                    
-                    result = await download_with_requests(video_url, filepath, headers)
-                    return result
-                    
-                logger.error(f"API Error: {videoData.get('message', 'Unknown error')}")
-                return None
-                
+                return await download_with_requests(video_url, filepath)
             except Exception as e:
-                logger.error(f"Error in song video download: {str(e)}")
+                logger.error("Error in song video download: %s", e)
                 return None
 
         async def song_audio_dl():
             try:
-                if not YT_API_KEY:
-                    logger.error("API KEY not set in config")
-                    return None
-                if not YTPROXY:
-                    logger.error("API Endpoint not set in config")
-                    return None
-                
-                headers = {
-                    "x-api-key": f"{YT_API_KEY}",
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-                }
-                
-                filepath = f"downloads/{title}.mp3"
-                
-                if os.path.exists(filepath):
+                safe_title = re.sub(r'[\\/:*?"<>|]+', "_", str(title or vid_id))[:180]
+                filepath = os.path.join("downloads", f"{safe_title}.mp3")
+                os.makedirs(os.path.dirname(filepath), exist_ok=True)
+                if os.path.exists(filepath) and os.path.getsize(filepath) > 0:
                     return filepath
-                
-                session = create_session()
-                getAudio = session.get(f"{YTPROXY}/info/{vid_id}", headers=headers, timeout=60)
-                
-                try:
-                    audioData = getAudio.json()
-                except Exception as e:
-                    logger.error(f"Invalid response from API: {str(e)}")
+
+                audio_url = await get_onegrab_track(self.base + vid_id, want_video=False)
+                if not audio_url:
                     return None
-                finally:
-                    session.close()
-                
-                status = audioData.get('status')
-                if status == 'success':
-                    audio_url = audioData['audio_url']
-                    
-                    result = await download_with_requests(audio_url, filepath, headers)
-                    return result
-                    
-                logger.error(f"API Error: {audioData.get('message', 'Unknown error')}")
-                return None
-                
+                return await download_with_requests(audio_url, filepath)
             except Exception as e:
-                logger.error(f"Error in song audio download: {str(e)}")
+                logger.error("Error in song audio download: %s", e)
                 return None
 
         if songvideo:
